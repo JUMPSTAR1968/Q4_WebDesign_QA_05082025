@@ -22,7 +22,7 @@ body {
 
 /* Header & Navigation */
 header {
-    background: #8B4513; /* SaddleBrown - warm, earthy */
+    background: #fdfaf6; /* SaddleBrown - warm, earthy */
     color: #fff;
     padding: 1rem 0;
     border-bottom: #c08552 3px solid; /* Lighter brown accent */
@@ -39,16 +39,25 @@ header .container {
     padding: 0 20px; /* Add padding to container within header */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Brush Script MT', 'Brush Script Std', cursive; /* Or similar elegant script */
-    animation: fadeInDown 1s ease-out;
+/* Styles for the new logo container */
+.logo-container {
+    margin: 0; /* Adjust if needed for alignment */
+    padding: 0;
+    animation: fadeInDown 1s ease-out; /* Apply animation to the container */
+    display: flex; /* Helps with vertical alignment if needed */
+    align-items: center;
 }
 
-header h1 a {
-    color: #fff;
-    text-decoration: none;
+.logo-container a {
+    display: inline-block; /* Or block, depending on layout needs */
+    text-decoration: none; /* Ensure no underline on the link */
+}
+
+/* Styles for the logo image itself */
+#header-logo {
+    height: 50px; /* --- ADJUST THIS VALUE --- to your desired logo height */
+    width: auto;   /* Maintain aspect ratio */
+    display: block; /* Removes potential extra space below inline images */
 }
 
 header nav ul {
@@ -63,7 +72,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #8B4513;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -73,8 +82,8 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a.active {
-    background-color: #fdfaf6;
-    color: #8B4513;
+    background-color: #8B4513;
+    color: #fff;
 }
 
 /* Main Content Sections */
@@ -113,18 +122,21 @@ header nav ul li a.active {
 
 /* Hero Section (Home Page) */
 .hero {
-    background: url('../images/hero-banner.jpg') no-repeat center center/cover; /* Replace with your image */
-    /* Fallback background if image fails */
-    background-color: #e0d8cc;
+    /* === UPDATE THIS LINE === */
+    background: url('../Images/home.jpg') no-repeat center center/cover;
+
+    /* You can keep this fallback color, or remove it if you're confident in your image path */
+    background-color: #e0d8cc; /* Fallback if image doesn't load */
+
     height: 70vh;
-    color: #fff;
+    color: #fff; /* Text color on top of the hero */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    position: relative;
+    position: relative; /* Needed for the ::before overlay */
 }
 
 .hero::before { /* Overlay for better text readability */
