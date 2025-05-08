@@ -22,9 +22,17 @@ body {
     padding: 20px 0;
 }
 
+#logo {
+    display: inline;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    float: auto;
+  }
+
 /* Header & Navigation */
 header {
-    background: #8B4513; /* SaddleBrown - warm, earthy */
+    background: #ffffff; /* SaddleBrown - warm, earthy */
     color: #fff;
     padding: 1rem 0;
     border-bottom: #c08552 3px solid; /* Lighter brown accent */
@@ -75,8 +83,8 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a.active {
-    background-color: #fdfaf6;
-    color: #8B4513;
+    background-color: #8B4513;
+    color: #ffffff;
 }
 
 /* Main Content Sections */
