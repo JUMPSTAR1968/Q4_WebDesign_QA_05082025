@@ -1,11 +1,9 @@
-
-
 /* General Reset & Body Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -22,17 +20,9 @@ body {
     padding: 20px 0;
 }
 
-#logo {
-    display: inline;
-    align-items: center;
-    width: 30%;
-    height: auto;
-    float: auto;
-  }
-
 /* Header & Navigation */
 header {
-    background: #ffffff; /* SaddleBrown - warm, earthy */
+    background: #8B4513; /* SaddleBrown - warm, earthy */
     color: #fff;
     padding: 1rem 0;
     border-bottom: #c08552 3px solid; /* Lighter brown accent */
@@ -83,8 +73,8 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a.active {
-    background-color: #8B4513;
-    color: #ffffff;
+    background-color: #fdfaf6;
+    color: #8B4513;
 }
 
 /* Main Content Sections */
